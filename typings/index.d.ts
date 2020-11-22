@@ -1,5 +1,5 @@
 declare module 'js-cord' {
-    import { Channel, Client, ClientOptions, Collection, DMChannel, Emoji, Guild, GuildChannel, GuildMember, GuildResolvable, Message, MessageAttachment, MessageEmbed, MessageMentions, MessageOptions, MessageAdditions, MessageReaction, PermissionResolvable, PermissionString, ReactionEmoji, Role, Snowflake, StringResolvable, TextChannel, User, UserResolvable, VoiceState, Webhook } from 'discord.js';
+    import { Channel, Client, ClientOptions, Collection, DMChannel, Emoji, Guild, GuildChannel, GuildMember, GuildResolvable, Message, MessageAttachment, MessageEmbed, MessageMentions, MessageOptions, MessageAdditions, MessageReaction, PermissionResolvable, PermissionString, ReactionEmoji, Role, Snowflake, StringResolvable, TextChannel, User, UserResolvable, VoiceState, Webhook, MessageEmbedOptions } from 'discord.js';
 
     export class JSCMessage extends Message {
         // Methods
@@ -10,14 +10,21 @@ declare module 'js-cord' {
     }
 
     export class JSClient extends Client {
-        public constructor(options?);
+        public constructor(options?: JSClientOptions);
 
         public start(token: String): Promise<void>;
     }
 
     export interface JSClientOptions {
         owners: Snowflake|Snowflake[]
-        
+    }
+
+    export class JSCEmbed extends MessageEmbed {
+        public constructor(options?)
+    }
+
+    export interface JSCEmbedOptions extends MessageEmbedOptions {
+        randomColor?: Boolean,
     }
 
     export class Command {
@@ -39,5 +46,9 @@ declare module 'js-cord' {
         text?: String,
         usage?: String,
         usageExamples?: String|String[];
+    }
+
+    export class JSCError extends Error {
+        public constructor(...message: any);
     }
 }

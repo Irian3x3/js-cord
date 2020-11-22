@@ -37,7 +37,30 @@ module.exports = class Command {
         this.nsfw = Boolean(options.nsfw);
     };
 
+    /**
+     * Execute the command.
+     * @param {JSCMessage} message The command message.
+     * @param {} args Arguments of the message.
+     * @param {JSClient} client The JSCord client.
+     */
+
     async run(message, args, client) {
         throw new Error(`${this.constructor.name} does not have a 'run()' method.`);
     };
+
+    async onBlock(message, reason, data) {
+        switch(reason) {
+            case 'nsfw': {
+                return message.reply(`I am unable to execute \`${this.name}\` outside of an NSFW channel!`);
+            }
+
+            case 'guildOnly': {
+                return message.channel.send(`I cannot execute \`${this.name}\` outside of a guild!`)
+            }
+
+            default: {
+                return null;
+            }
+        }
+    }
 };
