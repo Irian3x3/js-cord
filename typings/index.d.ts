@@ -1,4 +1,4 @@
-declare module 'js-cord' {
+declare module 'javascript-cord' {
     import { Channel, Client, ClientOptions, Collection, DMChannel, Emoji, Guild, GuildChannel, GuildMember, GuildResolvable, Message, MessageAttachment, MessageEmbed, MessageMentions, MessageOptions, MessageAdditions, MessageReaction, PermissionResolvable, PermissionString, ReactionEmoji, Role, Snowflake, StringResolvable, TextChannel, User, UserResolvable, VoiceState, Webhook, MessageEmbedOptions } from 'discord.js';
 
     export class JSCMessage extends Message {
@@ -50,5 +50,6 @@ declare module 'js-cord' {
 
     export class JSCError extends Error {
         public constructor(...message: any);
+        public get name(): string;
     }
 }

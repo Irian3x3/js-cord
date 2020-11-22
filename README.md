@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>JSCord</h1>
+    <h1>JavaScript-Cord (JSCord)</h1>
 </div>
 
 ## Table of contents

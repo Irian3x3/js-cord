@@ -1,5 +1,5 @@
 {
-  "name": "js-cord",
+  "name": "javascript-cord",
   "version": "1.0.0",
   "description": "A discord.js bot framework.",
   "main": "src/index.js",

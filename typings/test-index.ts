@@ -1,5 +1,5 @@
 /// <reference path="index.d.ts"/>
-import { JSCMessage, JSClient, Command } from 'js-cord';
+import { JSCMessage, JSClient, Command } from 'javascript-cord';
 
 const test = new JSClient();
 
