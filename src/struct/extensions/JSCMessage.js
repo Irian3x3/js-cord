@@ -16,4 +16,6 @@ module.exports = Structures.extend("Message", Message => {
 
         ping = Date.now() - this.createdTimestamp;
     };
+	
+	return JSCMessage;
 });
