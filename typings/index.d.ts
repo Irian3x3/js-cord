@@ -3,7 +3,7 @@ declare module 'js-cord' {
 
     export class JSCMessage extends Message {
         // Methods
-        public create(content: any): Promise<void>;
+        public create(content: any): Promise<any>;
         
         // Properties
         public ping: Number;

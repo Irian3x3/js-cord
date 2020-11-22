@@ -1,11 +1,10 @@
 const { Message, Structures } = require('discord.js');
 
-/**
- * JSCord message class.
- * Nothing too special.
- */
-
 module.exports = Structures.extend("Message", Message => {
+    /**
+     * JSCord message class.
+     * Nothing too special.
+     */
     class JSCMessage extends Message {
         /**
          * Creates/sends a message
@@ -14,7 +13,7 @@ module.exports = Structures.extend("Message", Message => {
         async create(content) {
             this.channel.send(content)
         };
-    
+
         ping = Date.now() - this.createdTimestamp;
     };
 });
