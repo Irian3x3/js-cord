@@ -20,7 +20,7 @@ declare module 'javascript-cord' {
     }
 
     export class JSCEmbed extends MessageEmbed {
-        public constructor(options?)
+        public constructor(options?: JSCEmbedOptions)
     }
 
     export interface JSCEmbedOptions extends MessageEmbedOptions {
