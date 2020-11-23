@@ -1,4 +1,4 @@
-const { Message, Structures } = require('discord.js');
+const { Message, MessageAttachment, Structures } = require('discord.js');
 
 module.exports = Structures.extend("Message", Message => {
     /**

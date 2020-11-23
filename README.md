@@ -12,14 +12,14 @@ JSCord is a discord.js framework to easily maintain discord bots.
 ## Installation
 Node.js 12.0.0+ is required. Install with npm:
 ```bash
-$ npm i js-cord
+$ npm i javascript-cord
 ```
 
 ## Example Usage
 *Examples will come out soon while I figure out more ways to make this package good.*
 <!--
 ```js
-const JSC = require('js-cord');
+const JSC = require('javascript-cord');
 
 const client = new JSC.JSClient(); // Declaring the new client
 

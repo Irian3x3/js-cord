@@ -30,7 +30,7 @@ declare module 'javascript-cord' {
     export class Command {
         public constructor(options: CommandOptions);
 
-        public run(message: JSCMessage, args: String | String[]): Promise<any>;
+        public run(message: JSCMessage, args: String | String[], client: JSClient): Promise<any>;
     }
 
     export interface CommandOptions {
