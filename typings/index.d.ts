@@ -13,6 +13,8 @@ declare module 'javascript-cord' {
         public constructor(options?: JSClientOptions);
 
         public start(token: String): Promise<void>;
+        public get command()
+        public on(event: 'message', listener: (message: JSCMessage) => void): this;
     }
 
     export interface JSClientOptions {

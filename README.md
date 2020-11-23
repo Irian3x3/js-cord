@@ -8,7 +8,8 @@
 - [Example Usage](#example-usage)
 - [Links](#links)
 ## About
-JSCord is a discord.js framework to easily maintain discord bots.
+JSCord is a discord.js framework to easily maintain discord bots.  
+***Note: This is still in beta and some features may not be working***
 ## Installation
 Node.js 12.0.0+ is required. Install with npm:
 ```bash

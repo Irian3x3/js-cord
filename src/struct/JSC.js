@@ -1,3 +1,4 @@
+const { JSCError } = require(`../index`);
 const { Client } = require('discord.js');
 
 /**
@@ -25,4 +26,8 @@ module.exports = class JSClient extends Client {
     async start(token) {
         await this.login(token);
     };
+
+    get commands() {
+        
+    }
 };

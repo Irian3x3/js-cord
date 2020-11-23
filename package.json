@@ -1,6 +1,6 @@
 {
   "name": "javascript-cord",
-  "version": "1.0.1",
+  "version": "1.0.21",
   "description": "A discord.js bot framework.",
   "main": "src/index.js",
   "types": "typings/index.d.ts",
